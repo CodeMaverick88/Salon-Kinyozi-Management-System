@@ -12,13 +12,13 @@ import {
 /* ------------------------------------------------------------------ */
 const IMAGES = {
   heroSlides: [
-    'public/Hair plaiting 1.jpg',
-    'public/Barber ShopSlideshow.jpg',
-    'public/Barber Shop 1.jpg',
-    'public/Nails Manicure.jpg',
+    '/Hair plaiting 1.jpg',
+    '/Barber ShopSlideshow.jpg',
+    '/Barber Shop 1.jpg',
+    '/Nails Manicure.jpg',
   ],
-  about: 'public/Babering Services 0.jpg',
-  aboutSmall: 'public/Service.jpg',
+  about: '/Babering Services 0.jpg',
+  aboutSmall: '/Service.jpg',
 }
 
 /* ------------------------------------------------------------------ */
@@ -63,18 +63,18 @@ const TRUST = [
 
 /* price: null shows "KSh —" until the owner sets it from the admin portal */
 const SERVICES = [
-  { id: 'braids', category: 'hair-salon', name: 'Braids', text: 'Neat, long-lasting braids in the style you choose.', duration: '3 – 5 hours', price: null, image: 'public/Braids.jpg' },
-  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', text: 'Styling for everyday looks and special occasions.', duration: '1 hour', price: null, image: 'public/Hair Styling.jpg' },
-  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', text: 'A smooth, polished finish after your wash.', duration: '45 minutes', price: null, image: 'public/Blow Drying.jpg' },
-  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", text: 'A clean cut shaped around your face and style.', duration: '30 minutes', price: null, image: 'public/Men Shave.jpg' },
-  { id: 'fade', category: 'kinyozi', name: 'Fade', text: 'Sharp, precise fades blended from skin to length.', duration: '40 minutes', price: null, image: 'public/Fade Haircut.jpg' },
-  { id: 'shave', category: 'kinyozi', name: 'Shave', text: 'A close, comfortable shave with a fresh finish.', duration: '25 minutes', price: null, image: 'public/Men Haircut.jpg' },
-  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', text: 'Shaped and lined beards that stay tidy.', duration: '20 minutes', price: null, image: 'public/Beard Trim.jpg' },
-  { id: 'makeup', category: 'beauty', name: 'Makeup', text: 'Makeup for events, photos and everyday confidence.', duration: '1 hour', price: null, image: 'public/Makeup.jpg' },
-  { id: 'nails', category: 'beauty', name: 'Nails', text: 'Nail shaping, colour and finishing.', duration: '1 hour', price: null, image: 'public/Nails.jpg' },
-  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', text: 'Hand and foot care that leaves you refreshed.', duration: '1 hour 30 minutes', price: null, image: 'public/Nails Manicure.jpg' },
-  { id: 'hair-wash', category: 'hair-care', name: 'Wash & Condition', text: 'A gentle wash with conditioning for soft hair.', duration: '30 minutes', price: null, image: 'public/Hair Wash.jpg' },
-  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', text: 'Treatments that restore strength and shine.', duration: '45 minutes', price: null, image: 'public/Hair Treatment.jpg' },
+  { id: 'braids', category: 'hair-salon', name: 'Braids', text: 'Neat, long-lasting braids in the style you choose.', duration: '3 – 5 hours', price: null, image: '/Braids.jpg' },
+  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', text: 'Styling for everyday looks and special occasions.', duration: '1 hour', price: null, image: '/Hair Styling.jpg' },
+  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', text: 'A smooth, polished finish after your wash.', duration: '45 minutes', price: null, image: '/Blow Drying.jpg' },
+  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", text: 'A clean cut shaped around your face and style.', duration: '30 minutes', price: null, image: '/Men Shave.jpg' },
+  { id: 'fade', category: 'kinyozi', name: 'Fade', text: 'Sharp, precise fades blended from skin to length.', duration: '40 minutes', price: null, image: '/Fade Haircut.jpg' },
+  { id: 'shave', category: 'kinyozi', name: 'Shave', text: 'A close, comfortable shave with a fresh finish.', duration: '25 minutes', price: null, image: '/Men Haircut.jpg' },
+  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', text: 'Shaped and lined beards that stay tidy.', duration: '20 minutes', price: null, image: '/Beard Trim.jpg' },
+  { id: 'makeup', category: 'beauty', name: 'Makeup', text: 'Makeup for events, photos and everyday confidence.', duration: '1 hour', price: null, image: '/Makeup.jpg' },
+  { id: 'nails', category: 'beauty', name: 'Nails', text: 'Nail shaping, colour and finishing.', duration: '1 hour', price: null, image: '/Nails.jpg' },
+  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', text: 'Hand and foot care that leaves you refreshed.', duration: '1 hour 30 minutes', price: null, image: '/Nails Manicure.jpg' },
+  { id: 'hair-wash', category: 'hair-care', name: 'Wash & Condition', text: 'A gentle wash with conditioning for soft hair.', duration: '30 minutes', price: null, image: '/Hair Wash.jpg' },
+  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', text: 'Treatments that restore strength and shine.', duration: '45 minutes', price: null, image: '/Hair Treatment.jpg' },
 ]
 
 const WHY = [
@@ -88,26 +88,26 @@ const WHY = [
 
 const GALLERY_FILTERS = ['All', 'Haircuts', 'Braids', 'Styling', 'Beard', 'Makeup', 'Nails', 'Before & After']
 const GALLERY = [
-  { id: 1, cat: 'Haircuts', src: 'public/Men Haircut.jpg', alt: 'Fresh haircut' },
-  { id: 2, cat: 'Braids', src: 'public/Braids.jpg', alt: 'Braided hairstyle' },
-  { id: 3, cat: 'Styling', src: 'public/Hair Styling.jpg', alt: 'Styled hair' },
-  { id: 4, cat: 'Beard', src: 'public/Beard Trim.jpg', alt: 'Groomed beard' },
-  { id: 5, cat: 'Makeup', src: 'public/Makeup.jpg', alt: 'Makeup look' },
-  { id: 6, cat: 'Nails', src: 'public/Nails.jpg', alt: 'Nail design' },
+  { id: 1, cat: 'Haircuts', src: '/Men Haircut.jpg', alt: 'Fresh haircut' },
+  { id: 2, cat: 'Braids', src: '/Braids.jpg', alt: 'Braided hairstyle' },
+  { id: 3, cat: 'Styling', src: '/Hair Styling.jpg', alt: 'Styled hair' },
+  { id: 4, cat: 'Beard', src: '/Beard Trim.jpg', alt: 'Groomed beard' },
+  { id: 5, cat: 'Makeup', src: '/Makeup.jpg', alt: 'Makeup look' },
+  { id: 6, cat: 'Nails', src: '/Nails.jpg', alt: 'Nail design' },
 ]
 
 /* Offers disappear automatically once endsAt has passed */
 const PROMOTIONS = [
-  { id: 'first-visit', title: 'First-visit offer', text: 'A welcome offer for customers booking with us for the first time.', image: 'public/First Visit Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Applies to first appointments only. Show your booking confirmation on arrival.' },
-  { id: 'cut-and-beard', title: 'Haircut and beard combo', text: 'Book a haircut and beard trim together for one package price.', image: 'public/Haircut and Beard Combo.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Both services must be booked in the same appointment.' },
-  { id: 'student', title: 'Student offer', text: 'A reduced price on selected services for students.', image: 'public/Student BOy Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Valid student ID required at your appointment.' },
+  { id: 'first-visit', title: 'First-visit offer', text: 'A welcome offer for customers booking with us for the first time.', image: '/First Visit Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Applies to first appointments only. Show your booking confirmation on arrival.' },
+  { id: 'cut-and-beard', title: 'Haircut and beard combo', text: 'Book a haircut and beard trim together for one package price.', image: '/Haircut and Beard Combo.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Both services must be booked in the same appointment.' },
+  { id: 'student', title: 'Student offer', text: 'A reduced price on selected services for students.', image: '/Student BOy Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Valid student ID required at your appointment.' },
 ]
 
 const TEAM = [
-  { id: 'hairstylist', role: 'Senior Hairstylist', speciality: 'Braids, styling and treatments', image: 'public/Senior HairStylist.jpg' },
-  { id: 'barber', role: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: 'public/HairStylist 2.jpg' },
-  { id: 'nails', role: 'Nail Technician', speciality: 'Manicures, pedicures and nail art', image: 'public/Nail Trchnician.jpg' },
-  { id: 'beauty', role: 'Beauty Therapist', speciality: 'Makeup and skin care', image: 'public/Beauty Therapist.jpg' },
+  { id: 'hairstylist', role: 'Senior Hairstylist', speciality: 'Braids, styling and treatments', image: '/Senior HairStylist.jpg' },
+  { id: 'barber', role: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: '/HairStylist 2.jpg' },
+  { id: 'nails', role: 'Nail Technician', speciality: 'Manicures, pedicures and nail art', image: '/Nail Trchnician.jpg' },
+  { id: 'beauty', role: 'Beauty Therapist', speciality: 'Makeup and skin care', image: '/Beauty Therapist.jpg' },
 ]
 
 /* Add real customer feedback here: { id, name, rating, text, date, photo? } */

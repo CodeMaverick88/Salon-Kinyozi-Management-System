@@ -17,7 +17,7 @@ const BUSINESS = {
 /*  IMAGES: use the same public/<filename> paths as the Home page.      */
 /*  Keep these filenames aligned with the files in the public folder.   */
 /* ------------------------------------------------------------------ */
-const HERO_IMAGE = 'public/Hair plaiting 1.jpg'
+const HERO_IMAGE = '/Hair plaiting 1.jpg'
 
 const CATEGORIES = [
   { id: 'hair-salon', name: 'Hair Salon', text: 'Braids, styling and treatments', icon: Sparkles },
@@ -30,62 +30,62 @@ const CATEGORIES = [
 /*  status: 'available' or 'unavailable'.  active: false hides it.      */
 /*  featured: true shows it under "Our Most Loved Services".            */
 const SERVICES = [
-  { id: 'braids', category: 'hair-salon', name: 'Braids', active: true, status: 'available', featured: true, price: null, durationMin: 240, durationText: '3 – 5 hours', image: 'public/Braids.jpg', gallery: [],
+  { id: 'braids', category: 'hair-salon', name: 'Braids', active: true, status: 'available', featured: true, price: null, durationMin: 240, durationText: '3 – 5 hours', image: '/Braids.jpg', gallery: [],
     text: 'Neat, long-lasting braids in the style you choose.',
     description: 'Choose the style, size and length you want and our stylists will braid it with care. Neat parting and a clean finish keep your braids looking good for longer.',
     includes: ['Style and length consultation', 'Hair parting and preparation', 'Braiding in your chosen style', 'Neat finishing'],
     prep: 'Come with clean, detangled hair.' },
-  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: 'public/Hair Styling.jpg', gallery: [],
+  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: '/Hair Styling.jpg', gallery: [],
     text: 'Styling for everyday looks and special occasions.',
     description: 'From a relaxed everyday look to a polished style for an event, we shape your hair to match your outfit, your mood and your occasion.',
     includes: ['Consultation on the look you want', 'Styling and shaping', 'Finishing products'],
     prep: '' },
-  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', active: true, status: 'available', featured: false, price: null, durationMin: 45, image: 'public/Blow Drying.jpg', gallery: [],
+  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', active: true, status: 'available', featured: false, price: null, durationMin: 45, image: '/Blow Drying.jpg', gallery: [],
     text: 'A smooth, polished finish after your wash.',
     description: 'A professional blow-dry that leaves your hair smooth, full of movement and ready for the day or the night ahead.',
     includes: ['Wash and towel dry', 'Professional blow-dry', 'Smooth finish'],
     prep: '' },
-  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", active: true, status: 'available', featured: true, price: null, durationMin: 30, image: 'public/Men Shave.jpg', gallery: [],
+  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", active: true, status: 'available', featured: true, price: null, durationMin: 30, image: '/Men Shave.jpg', gallery: [],
     text: 'A clean cut shaped around your face and style.',
     description: 'A professional haircut and styling to give you a clean, fresh appearance. Tell your barber what you have in mind or ask for advice on what suits you.',
     includes: ['Consultation', 'Haircut with clippers and scissors', 'Neckline clean-up', 'Styling'],
     prep: '' },
-  { id: 'fade', category: 'kinyozi', name: 'Fade', active: true, status: 'available', featured: false, price: null, durationMin: 40, image: 'public/Fade Haircut.jpg', gallery: [],
+  { id: 'fade', category: 'kinyozi', name: 'Fade', active: true, status: 'available', featured: false, price: null, durationMin: 40, image: '/Fade Haircut.jpg', gallery: [],
     text: 'Sharp, precise fades blended from skin to length.',
     description: 'A carefully blended fade, from a low skin fade to a high taper, finished with clean lines.',
     includes: ['Consultation on fade height', 'Precision blending', 'Line-up', 'Styling'],
     prep: '' },
-  { id: 'shave', category: 'kinyozi', name: 'Shave', active: true, status: 'available', featured: false, price: null, durationMin: 25, image: 'public/Men Haircut.jpg', gallery: [],
+  { id: 'shave', category: 'kinyozi', name: 'Shave', active: true, status: 'available', featured: false, price: null, durationMin: 25, image: '/Men Haircut.jpg', gallery: [],
     text: 'A close, comfortable shave with a fresh finish.',
     description: 'A close and comfortable shave that leaves your skin smooth and refreshed.',
     includes: ['Skin preparation', 'Close shave', 'Soothing finish'],
     prep: '' },
-  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', active: true, status: 'available', featured: false, price: null, durationMin: 20, image: 'public/Beard Trim.jpg', gallery: [],
+  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', active: true, status: 'available', featured: false, price: null, durationMin: 20, image: '/Beard Trim.jpg', gallery: [],
     text: 'Shaped and lined beards that stay tidy.',
     description: 'Your beard trimmed, shaped and lined so it frames your face and stays neat between visits.',
     includes: ['Shaping and trimming', 'Edge and line-up', 'Finishing'],
     prep: '' },
-  { id: 'makeup', category: 'beauty', name: 'Makeup', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: 'public/Makeup.jpg', gallery: [],
+  { id: 'makeup', category: 'beauty', name: 'Makeup', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: '/Makeup.jpg', gallery: [],
     text: 'Makeup for events, photos and everyday confidence.',
     description: 'Makeup applied for the occasion you have in mind, whether it is a wedding, a photoshoot, a night out or simply a day when you want to feel your best.',
     includes: ['Skin preparation', 'Full makeup application', 'Finishing'],
     prep: 'Arrive with a clean, moisturised face.' },
-  { id: 'nails', category: 'beauty', name: 'Nails', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: 'public/Nails.jpg', gallery: [],
+  { id: 'nails', category: 'beauty', name: 'Nails', active: true, status: 'available', featured: false, price: null, durationMin: 60, image: '/Nails.jpg', gallery: [],
     text: 'Nail shaping, colour and finishing.',
     description: 'Nails shaped, coloured and finished to your taste, from simple and natural to bold and creative.',
     includes: ['Nail shaping', 'Colour application', 'Finishing coat'],
     prep: '' },
-  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', active: true, status: 'available', featured: true, price: null, durationMin: 90, image: 'public/Nails Manicure.jpg', gallery: [],
+  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', active: true, status: 'available', featured: true, price: null, durationMin: 90, image: '/Nails Manicure.jpg', gallery: [],
     text: 'Hand and foot care that leaves you refreshed.',
     description: 'Relaxing care for your hands and feet, with grooming, soothing treatment and a neat finish.',
     includes: ['Hand and foot soak', 'Nail and cuticle care', 'Moisturising treatment', 'Polish'],
     prep: '' },
-  { id: 'hair-wash', category: 'hair-care', name: 'Wash & Condition', active: true, status: 'available', featured: false, price: null, durationMin: 30, image: 'public/Hair Wash.jpg', gallery: [],
+  { id: 'hair-wash', category: 'hair-care', name: 'Wash & Condition', active: true, status: 'available', featured: false, price: null, durationMin: 30, image: '/Hair Wash.jpg', gallery: [],
     text: 'A gentle wash with conditioning for soft hair.',
     description: 'A gentle wash and conditioning treatment that leaves your hair clean, soft and easy to manage.',
     includes: ['Gentle shampoo', 'Conditioning', 'Towel dry'],
     prep: '' },
-  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', active: true, status: 'available', featured: true, price: null, durationMin: 45, image: 'public/Hair Treatment.jpg', gallery: [],
+  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', active: true, status: 'available', featured: true, price: null, durationMin: 45, image: '/Hair Treatment.jpg', gallery: [],
     text: 'Treatments that restore strength and shine.',
     description: 'A treatment chosen for your hair type to restore moisture, strength and shine.',
     includes: ['Hair and scalp check', 'Treatment application', 'Rinse and finish'],
@@ -94,41 +94,41 @@ const SERVICES = [
 
 /* A package's price is set by the owner; savings are worked out from the service prices. */
 const PACKAGES = [
-  { id: 'fresh-look', name: 'Fresh Look', text: 'A haircut and a beard trim in one visit.', serviceIds: ['mens-haircut', 'beard-trim'], price: null, image: 'public/Haircut and Beard Combo.jpg', active: true },
-  { id: 'hair-care-package', name: 'Hair Care Package', text: 'A wash, a treatment and styling to finish.', serviceIds: ['hair-wash', 'hair-treatment', 'hair-styling'], price: null, image: 'public/Hair Treatment.jpg', active: true },
-  { id: 'bridal', name: 'Bridal Package', text: 'Hair styling and makeup for your big day.', serviceIds: ['hair-styling', 'makeup'], price: null, image: 'public/Makeup.jpg', active: true },
-  { id: 'complete-grooming', name: 'Complete Grooming', text: 'A haircut, a shave and beard grooming.', serviceIds: ['mens-haircut', 'shave', 'beard-trim'], price: null, image: 'public/Men Haircut.jpg', active: true },
+  { id: 'fresh-look', name: 'Fresh Look', text: 'A haircut and a beard trim in one visit.', serviceIds: ['mens-haircut', 'beard-trim'], price: null, image: '/Haircut and Beard Combo.jpg', active: true },
+  { id: 'hair-care-package', name: 'Hair Care Package', text: 'A wash, a treatment and styling to finish.', serviceIds: ['hair-wash', 'hair-treatment', 'hair-styling'], price: null, image: '/Hair Treatment.jpg', active: true },
+  { id: 'bridal', name: 'Bridal Package', text: 'Hair styling and makeup for your big day.', serviceIds: ['hair-styling', 'makeup'], price: null, image: '/Makeup.jpg', active: true },
+  { id: 'complete-grooming', name: 'Complete Grooming', text: 'A haircut, a shave and beard grooming.', serviceIds: ['mens-haircut', 'shave', 'beard-trim'], price: null, image: '/Men Haircut.jpg', active: true },
 ]
 
 /* Offers disappear automatically once endsAt has passed */
 const PROMOTIONS = [
-  { id: 'first-visit', title: 'First-visit offer', text: 'A welcome offer for customers booking with us for the first time.', image: 'public/First Visit Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Applies to first appointments only. Show your booking confirmation on arrival.' },
-  { id: 'cut-and-beard', title: 'Haircut and beard combo', text: 'Book a haircut and beard trim together for one package price.', image: 'public/Haircut and Beard Combo.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Both services must be booked in the same appointment.' },
-  { id: 'student', title: 'Student offer', text: 'A reduced price on selected services for students.', image: 'public/Student BOy Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Valid student ID required at your appointment.' },
+  { id: 'first-visit', title: 'First-visit offer', text: 'A welcome offer for customers booking with us for the first time.', image: '/First Visit Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Applies to first appointments only. Show your booking confirmation on arrival.' },
+  { id: 'cut-and-beard', title: 'Haircut and beard combo', text: 'Book a haircut and beard trim together for one package price.', image: '/Haircut and Beard Combo.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Both services must be booked in the same appointment.' },
+  { id: 'student', title: 'Student offer', text: 'A reduced price on selected services for students.', image: '/Student BOy Offer.jpg', oldPrice: null, price: null, startsAt: '2026-01-01', endsAt: '2027-12-31', terms: 'Valid student ID required at your appointment.' },
 ]
 
 /* Portfolio photos are tied to a service, so they show up in that service's details too */
 const PORTFOLIO = [
-  { id: 1, serviceId: 'mens-haircut', src: 'public/Men Haircut.jpg', alt: 'Fresh haircut' },
-  { id: 2, serviceId: 'braids', src: 'public/Braids.jpg', alt: 'Braided hairstyle' },
-  { id: 3, serviceId: 'hair-styling', src: 'public/Hair Styling.jpg', alt: 'Styled hair' },
-  { id: 4, serviceId: 'beard-trim', src: 'public/Beard Trim.jpg', alt: 'Groomed beard' },
-  { id: 5, serviceId: 'makeup', src: 'public/Makeup.jpg', alt: 'Makeup look' },
-  { id: 6, serviceId: 'nails', src: 'public/Nails.jpg', alt: 'Nail design' },
-  { id: 7, serviceId: 'fade', src: 'public/Fade Haircut.jpg', alt: 'Fade haircut' },
-  { id: 8, serviceId: 'braids', src: 'public/Braids.jpg', alt: 'Box braids' },
-  { id: 9, serviceId: 'hair-styling', src: 'public/Hair Styling.jpg', alt: 'Event hairstyle' },
-  { id: 10, serviceId: 'manicure', src: 'public/Nails Manicure.jpg', alt: 'Manicure' },
-  { id: 11, serviceId: 'hair-treatment', src: 'public/Hair Treatment.jpg', alt: 'Hair after treatment' },
-  { id: 12, serviceId: 'mens-haircut', src: 'public/Men Shave.jpg', alt: 'Classic haircut' },
+  { id: 1, serviceId: 'mens-haircut', src: '/Men Haircut.jpg', alt: 'Fresh haircut' },
+  { id: 2, serviceId: 'braids', src: '/Braids.jpg', alt: 'Braided hairstyle' },
+  { id: 3, serviceId: 'hair-styling', src: '/Hair Styling.jpg', alt: 'Styled hair' },
+  { id: 4, serviceId: 'beard-trim', src: '/Beard Trim.jpg', alt: 'Groomed beard' },
+  { id: 5, serviceId: 'makeup', src: '/Makeup.jpg', alt: 'Makeup look' },
+  { id: 6, serviceId: 'nails', src: '/Nails.jpg', alt: 'Nail design' },
+  { id: 7, serviceId: 'fade', src: '/Fade Haircut.jpg', alt: 'Fade haircut' },
+  { id: 8, serviceId: 'braids', src: '/Braids.jpg', alt: 'Box braids' },
+  { id: 9, serviceId: 'hair-styling', src: '/Hair Styling.jpg', alt: 'Event hairstyle' },
+  { id: 10, serviceId: 'manicure', src: '/Nails Manicure.jpg', alt: 'Manicure' },
+  { id: 11, serviceId: 'hair-treatment', src: '/Hair Treatment.jpg', alt: 'Hair after treatment' },
+  { id: 12, serviceId: 'mens-haircut', src: '/Men Shave.jpg', alt: 'Classic haircut' },
 ]
 
 /* Photos for the team live in /public/clients/team/. Add names and bios here when you are ready. */
 const STAFF = [
-  { id: 'hairstylist', role: 'Senior Hairstylist', speciality: 'Braids, styling and treatments', image: 'public/Senior HairStylist.jpg', serviceIds: ['braids', 'hair-styling', 'blow-dry', 'hair-wash', 'hair-treatment'] },
-  { id: 'barber', role: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: 'public/HairStylist 2.jpg', serviceIds: ['mens-haircut', 'fade', 'shave', 'beard-trim'] },
-  { id: 'nails', role: 'Nail Technician', speciality: 'Manicures, pedicures and nail art', image: 'public/Nail Trchnician.jpg', serviceIds: ['nails', 'manicure'] },
-  { id: 'beauty', role: 'Beauty Therapist', speciality: 'Makeup and skin care', image: 'public/Beauty Therapist.jpg', serviceIds: ['makeup'] },
+  { id: 'hairstylist', role: 'Senior Hairstylist', speciality: 'Braids, styling and treatments', image: '/Senior HairStylist.jpg', serviceIds: ['braids', 'hair-styling', 'blow-dry', 'hair-wash', 'hair-treatment'] },
+  { id: 'barber', role: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: '/HairStylist 2.jpg', serviceIds: ['mens-haircut', 'fade', 'shave', 'beard-trim'] },
+  { id: 'nails', role: 'Nail Technician', speciality: 'Manicures, pedicures and nail art', image: '/Nail Trchnician.jpg', serviceIds: ['nails', 'manicure'] },
+  { id: 'beauty', role: 'Beauty Therapist', speciality: 'Makeup and skin care', image: '/Beauty Therapist.jpg', serviceIds: ['makeup'] },
 ]
 
 const FAQS = [

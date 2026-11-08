@@ -24,19 +24,19 @@ const values = [
 ]
 
 const team = [
-  { role: 'Senior Hairstylist', specialty: 'Braids, styling and hair care', image: 'public/Senior HairStylist.jpg', alt: 'Hairstylist ready to provide a salon service' },
-  { role: 'Professional Barber', specialty: 'Haircuts, fades and beard grooming', image: 'public/HairStylist 2.jpg', alt: 'Barber holding scissors' },
-  { role: 'Nail Technician', specialty: 'Manicures, pedicures and nail care', image: 'public/Nail Trchnician.jpg', alt: 'Nail technician at work' },
-  { role: 'Beauty Therapist', specialty: 'Makeup and beauty services', image: 'public/Beauty Therapist.jpg', alt: 'Beauty therapist' },
+  { role: 'Senior Hairstylist', specialty: 'Braids, styling and hair care', image: '/Senior HairStylist.jpg', alt: 'Hairstylist ready to provide a salon service' },
+  { role: 'Professional Barber', specialty: 'Haircuts, fades and beard grooming', image: '/HairStylist 2.jpg', alt: 'Barber holding scissors' },
+  { role: 'Nail Technician', specialty: 'Manicures, pedicures and nail care', image: '/Nail Trchnician.jpg', alt: 'Nail technician at work' },
+  { role: 'Beauty Therapist', specialty: 'Makeup and beauty services', image: '/Beauty Therapist.jpg', alt: 'Beauty therapist' },
 ]
 
 const gallery = [
-  { image: 'public/Men Haircut.jpg', alt: 'Men’s haircut', label: 'Fresh cuts' },
-  { image: 'public/Braids.jpg', alt: 'Braided hairstyle', label: 'Braids' },
-  { image: 'public/Hair Styling.jpg', alt: 'Styled hair', label: 'Hair styling' },
-  { image: 'public/Beard Trim.jpg', alt: 'Beard trim', label: 'Beard grooming' },
-  { image: 'public/Makeup.jpg', alt: 'Makeup service', label: 'Beauty' },
-  { image: 'public/Nails.jpg', alt: 'Nail service', label: 'Nails' },
+  { image: '/Men Haircut.jpg', alt: 'Men’s haircut', label: 'Fresh cuts' },
+  { image: '/Braids.jpg', alt: 'Braided hairstyle', label: 'Braids' },
+  { image: '/Hair Styling.jpg', alt: 'Styled hair', label: 'Hair styling' },
+  { image: '/Beard Trim.jpg', alt: 'Beard trim', label: 'Beard grooming' },
+  { image: '/Makeup.jpg', alt: 'Makeup service', label: 'Beauty' },
+  { image: '/Nails.jpg', alt: 'Nail service', label: 'Nails' },
 ]
 
 const faqs = [
@@ -100,7 +100,7 @@ const aboutStyles = `
     position: absolute;
     z-index: -2;
     inset: 0;
-    background-image: linear-gradient(90deg, rgba(15,15,14,.92) 0%, rgba(15,15,14,.70) 43%, rgba(15,15,14,.12) 100%), linear-gradient(0deg, rgba(15,15,14,.62), transparent 60%), url('public/Hair plaiting 1.jpg');
+    background-image: linear-gradient(90deg, rgba(15,15,14,.92) 0%, rgba(15,15,14,.70) 43%, rgba(15,15,14,.12) 100%), linear-gradient(0deg, rgba(15,15,14,.62), transparent 60%), url('/Hair plaiting 1.jpg');
     background-size: cover;
     background-position: center 38%;
     transform: scale(1.025);
@@ -231,7 +231,7 @@ const aboutStyles = `
     .about-wrap, .about-hero-content { width: min(100% - 30px, 1160px); }
     .about-section { padding: 60px 0; }
     .about-hero { min-height: 590px; min-height: min(740px, 82svh); }
-    .about-hero::before { background-image: linear-gradient(0deg, rgba(15,15,14,.93) 0%, rgba(15,15,14,.55) 57%, rgba(15,15,14,.15) 100%), url('public/Hair plaiting 1.jpg'); background-position: 55% center; }
+    .about-hero::before { background-image: linear-gradient(0deg, rgba(15,15,14,.93) 0%, rgba(15,15,14,.55) 57%, rgba(15,15,14,.15) 100%), url('/Hair plaiting 1.jpg'); background-position: 55% center; }
     .about-hero-content { padding: 72px 0 58px; }
     .about-hero h1 { font-size: clamp(2.8rem, 14vw, 4.8rem); }
     .about-actions { display: grid; grid-template-columns: 1fr; max-width: 360px; }
@@ -344,7 +344,7 @@ function About() {
             </div>
           </Reveal>
           <Reveal delay={100} className="about-story-photo">
-            <img src="public/Babering Services 0.jpg" alt="A barber carefully shaping a client's beard" loading="lazy" />
+            <img src="/Babering Services 0.jpg" alt="A barber carefully shaping a client's beard" loading="lazy" />
             <div className="about-photo-note">
               <strong>Look good. Feel great.</strong>
               <span>Professional grooming and beauty, with a personal touch.</span>
@@ -466,15 +466,15 @@ function About() {
           </Reveal>
           <div className="about-space-grid">
             <Reveal className="about-space-main">
-              <img src="public/Barber Shop 1.jpg" alt="Barber shop interior and styling stations" loading="lazy" />
+              <img src="/Barber Shop 1.jpg" alt="Barber shop interior and styling stations" loading="lazy" />
               <div className="about-space-caption"><strong>Come in and make yourself comfortable.</strong><span>Find us at Jomo Drive, Nderi, Kenya.</span></div>
             </Reveal>
             <div className="about-space-side">
               <Reveal delay={80}>
-                <figure><img src="public/Service.jpg" alt="A barber providing a careful grooming service" loading="lazy" /></figure>
+                <figure><img src="/Service.jpg" alt="A barber providing a careful grooming service" loading="lazy" /></figure>
               </Reveal>
               <Reveal delay={150}>
-                <figure><img src="public/Nails Manicure.jpg" alt="Manicure service" loading="lazy" /></figure>
+                <figure><img src="/Nails Manicure.jpg" alt="Manicure service" loading="lazy" /></figure>
               </Reveal>
             </div>
           </div>

@@ -82,7 +82,7 @@ const contactStyles = `
   .contact-section-head .contact-heading, .contact-section-head .contact-lead { margin-left: auto; margin-right: auto; }
 
   .contact-hero { position: relative; min-height: clamp(440px, 66vh, 680px); display: grid; align-items: center; isolation: isolate; background: #171717; }
-  .contact-hero::before { content: ''; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(90deg, rgba(15,15,14,.93) 0%, rgba(15,15,14,.72) 48%, rgba(15,15,14,.2) 100%), linear-gradient(0deg, rgba(15,15,14,.4), transparent 65%), url('public/Barber ShopSlideshow.jpg'); background-size: cover; background-position: center; animation: contact-image-in 1s cubic-bezier(.2,.8,.2,1) both; }
+  .contact-hero::before { content: ''; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(90deg, rgba(15,15,14,.93) 0%, rgba(15,15,14,.72) 48%, rgba(15,15,14,.2) 100%), linear-gradient(0deg, rgba(15,15,14,.4), transparent 65%), url('/Barber ShopSlideshow.jpg'); background-size: cover; background-position: center; animation: contact-image-in 1s cubic-bezier(.2,.8,.2,1) both; }
   .contact-hero::after { content: ''; position: absolute; z-index: -1; inset: auto 0 0; height: 120px; background: linear-gradient(transparent, var(--contact-ink)); }
   .contact-hero-content { width: min(1160px, calc(100% - 40px)); margin-inline: auto; padding: 76px 0; animation: contact-rise-in .75s cubic-bezier(.2,.8,.2,1) .1s both; }
   .contact-hero h1 { max-width: 760px; margin: 18px 0 0; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(2.9rem, 8vw, 6.2rem); line-height: .99; letter-spacing: -.055em; }
@@ -174,7 +174,7 @@ const contactStyles = `
     .contact-wrap, .contact-hero-content { width: min(100% - 30px, 1160px); }
     .contact-section { padding: 58px 0; }
     .contact-hero { min-height: min(650px, 78svh); }
-    .contact-hero::before { background-image: linear-gradient(0deg, rgba(15,15,14,.94) 0%, rgba(15,15,14,.65) 55%, rgba(15,15,14,.22) 100%), url('public/Barber ShopSlideshow.jpg'); background-position: 54% center; }
+    .contact-hero::before { background-image: linear-gradient(0deg, rgba(15,15,14,.94) 0%, rgba(15,15,14,.65) 55%, rgba(15,15,14,.22) 100%), url('/Barber ShopSlideshow.jpg'); background-position: 54% center; }
     .contact-hero-content { padding: 66px 0 54px; }
     .contact-hero h1 { font-size: clamp(2.75rem, 13vw, 4.7rem); }
     .contact-actions { display: grid; grid-template-columns: 1fr; max-width: 360px; }

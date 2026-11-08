@@ -22,25 +22,25 @@ import {
   browser's displayed price, duration, availability, or selected staff on submit.
 */
 const bookingServices = [
-  { id: 'braids', name: 'Braids', category: 'Hair Salon', detail: 'Neat, long-lasting braids in the style you choose.', duration: 240, image: 'public/Braids.jpg' },
-  { id: 'hair-styling', name: 'Hair Styling', category: 'Hair Salon', detail: 'Styling for everyday looks and special occasions.', duration: 60, image: 'public/Hair Styling.jpg' },
-  { id: 'blow-dry', name: 'Blow-Dry', category: 'Hair Salon', detail: 'A smooth, polished finish after your wash.', duration: 45, image: 'public/Blow Drying.jpg' },
-  { id: 'mens-haircut', name: "Men's Haircut", category: 'Kinyozi', detail: 'A clean cut shaped around your face and style.', duration: 30, image: 'public/Men Shave.jpg' },
-  { id: 'fade', name: 'Fade', category: 'Kinyozi', detail: 'Sharp, precise fades blended from skin to length.', duration: 40, image: 'public/Fade Haircut.jpg' },
-  { id: 'shave', name: 'Shave', category: 'Kinyozi', detail: 'A close, comfortable shave with a fresh finish.', duration: 25, image: 'public/Men Haircut.jpg' },
-  { id: 'beard-trim', name: 'Beard Trim', category: 'Kinyozi', detail: 'Shaped and lined beards that stay tidy.', duration: 20, image: 'public/Beard Trim.jpg' },
-  { id: 'makeup', name: 'Makeup', category: 'Beauty & Nails', detail: 'Makeup for events, photos and everyday confidence.', duration: 60, image: 'public/Makeup.jpg' },
-  { id: 'nails', name: 'Nails', category: 'Beauty & Nails', detail: 'Nail shaping, colour and finishing.', duration: 60, image: 'public/Nails.jpg' },
-  { id: 'manicure', name: 'Manicure & Pedicure', category: 'Beauty & Nails', detail: 'Hand and foot care that leaves you refreshed.', duration: 90, image: 'public/Nails Manicure.jpg' },
-  { id: 'hair-wash', name: 'Wash & Condition', category: 'Hair Care', detail: 'A gentle wash with conditioning for soft hair.', duration: 30, image: 'public/Hair Wash.jpg' },
-  { id: 'hair-treatment', name: 'Hair Treatment', category: 'Hair Care', detail: 'Treatments that restore strength and shine.', duration: 45, image: 'public/Hair Treatment.jpg' },
+  { id: 'braids', name: 'Braids', category: 'Hair Salon', detail: 'Neat, long-lasting braids in the style you choose.', duration: 240, image: '/Braids.jpg' },
+  { id: 'hair-styling', name: 'Hair Styling', category: 'Hair Salon', detail: 'Styling for everyday looks and special occasions.', duration: 60, image: '/Hair Styling.jpg' },
+  { id: 'blow-dry', name: 'Blow-Dry', category: 'Hair Salon', detail: 'A smooth, polished finish after your wash.', duration: 45, image: '/Blow Drying.jpg' },
+  { id: 'mens-haircut', name: "Men's Haircut", category: 'Kinyozi', detail: 'A clean cut shaped around your face and style.', duration: 30, image: '/Men Shave.jpg' },
+  { id: 'fade', name: 'Fade', category: 'Kinyozi', detail: 'Sharp, precise fades blended from skin to length.', duration: 40, image: '/Fade Haircut.jpg' },
+  { id: 'shave', name: 'Shave', category: 'Kinyozi', detail: 'A close, comfortable shave with a fresh finish.', duration: 25, image: '/Men Haircut.jpg' },
+  { id: 'beard-trim', name: 'Beard Trim', category: 'Kinyozi', detail: 'Shaped and lined beards that stay tidy.', duration: 20, image: '/Beard Trim.jpg' },
+  { id: 'makeup', name: 'Makeup', category: 'Beauty & Nails', detail: 'Makeup for events, photos and everyday confidence.', duration: 60, image: '/Makeup.jpg' },
+  { id: 'nails', name: 'Nails', category: 'Beauty & Nails', detail: 'Nail shaping, colour and finishing.', duration: 60, image: '/Nails.jpg' },
+  { id: 'manicure', name: 'Manicure & Pedicure', category: 'Beauty & Nails', detail: 'Hand and foot care that leaves you refreshed.', duration: 90, image: '/Nails Manicure.jpg' },
+  { id: 'hair-wash', name: 'Wash & Condition', category: 'Hair Care', detail: 'A gentle wash with conditioning for soft hair.', duration: 30, image: '/Hair Wash.jpg' },
+  { id: 'hair-treatment', name: 'Hair Treatment', category: 'Hair Care', detail: 'Treatments that restore strength and shine.', duration: 45, image: '/Hair Treatment.jpg' },
 ]
 
 const professionals = [
-  { id: 'hairstylist', title: 'Senior Hairstylist', speciality: 'Braids, styling and hair treatments', image: 'public/Senior HairStylist.jpg', serviceIds: ['braids', 'hair-styling', 'blow-dry', 'hair-wash', 'hair-treatment'] },
-  { id: 'barber', title: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: 'public/HairStylist 2.jpg', serviceIds: ['mens-haircut', 'fade', 'shave', 'beard-trim'] },
-  { id: 'nail-tech', title: 'Nail Technician', speciality: 'Manicures, pedicures and nail care', image: 'public/Nail Trchnician.jpg', serviceIds: ['nails', 'manicure'] },
-  { id: 'beauty-therapist', title: 'Beauty Therapist', speciality: 'Makeup and beauty services', image: 'public/Beauty Therapist.jpg', serviceIds: ['makeup'] },
+  { id: 'hairstylist', title: 'Senior Hairstylist', speciality: 'Braids, styling and hair treatments', image: '/Senior HairStylist.jpg', serviceIds: ['braids', 'hair-styling', 'blow-dry', 'hair-wash', 'hair-treatment'] },
+  { id: 'barber', title: 'Professional Barber', speciality: 'Fades, haircuts and beard grooming', image: '/HairStylist 2.jpg', serviceIds: ['mens-haircut', 'fade', 'shave', 'beard-trim'] },
+  { id: 'nail-tech', title: 'Nail Technician', speciality: 'Manicures, pedicures and nail care', image: '/Nail Trchnician.jpg', serviceIds: ['nails', 'manicure'] },
+  { id: 'beauty-therapist', title: 'Beauty Therapist', speciality: 'Makeup and beauty services', image: '/Beauty Therapist.jpg', serviceIds: ['makeup'] },
 ]
 
 const previewTimes = ['9:00 AM', '10:00 AM', '11:30 AM', '1:00 PM', '2:30 PM', '4:00 PM']
@@ -59,7 +59,7 @@ const bookNowStyles = `
   .booking-page button, .booking-page input, .booking-page select, .booking-page textarea { font:inherit; }
   .booking-wrap { width:min(1180px,calc(100% - 40px)); margin-inline:auto; }
   .booking-hero { position:relative; isolation:isolate; overflow:hidden; padding:clamp(54px,8vw,90px) 0 44px; background:#191917; }
-  .booking-hero::before { content:''; position:absolute; z-index:-2; inset:0; background:linear-gradient(90deg,rgba(18,18,17,.96),rgba(18,18,17,.78) 54%,rgba(18,18,17,.5)),url('public/Hair plaiting 1.jpg') center 42%/cover; animation:book-hero-in .85s cubic-bezier(.2,.8,.2,1) both; }
+  .booking-hero::before { content:''; position:absolute; z-index:-2; inset:0; background:linear-gradient(90deg,rgba(18,18,17,.96),rgba(18,18,17,.78) 54%,rgba(18,18,17,.5)),url('/Hair plaiting 1.jpg') center 42%/cover; animation:book-hero-in .85s cubic-bezier(.2,.8,.2,1) both; }
   .booking-hero::after { content:''; position:absolute; z-index:-1; inset:auto 0 0; height:100px; background:linear-gradient(transparent,var(--book-ink)); }
   @keyframes book-hero-in { from { opacity:.55; transform:scale(1.04); } to { opacity:1; transform:scale(1); } }
   .booking-hero-copy { max-width:760px; animation:book-rise .7s cubic-bezier(.2,.8,.2,1) .1s both; }
@@ -175,7 +175,7 @@ const bookNowStyles = `
   .booking-page :focus-visible { outline:2px solid var(--book-gold); outline-offset:4px; }
   @media(max-width:980px) { .booking-layout { grid-template-columns:minmax(0,1fr) 280px; gap:15px; } .booking-step-name { font-size:.72rem; } .booking-service-grid { grid-template-columns:1fr; } }
   @media(max-width:760px) { .booking-wrap { width:min(100% - 30px,1180px); } .booking-layout { grid-template-columns:1fr; } .booking-summary-desktop { display:none; } .booking-mobile-summary { display:block; margin-bottom:16px; } .booking-mobile-summary summary { padding:13px 15px; border:1px solid var(--book-line); border-radius:14px; color:var(--book-ivory); background:var(--book-glass); font-weight:700; cursor:pointer; } .booking-mobile-summary[open] summary { border-radius:14px 14px 0 0; } .booking-mobile-summary .booking-summary { position:static; border-radius:0 0 16px 16px; } }
-  @media(max-width:600px) { .booking-wrap { width:min(100% - 26px,1180px); } .booking-hero { padding:52px 0 32px; } .booking-hero::before { background-image:linear-gradient(0deg,rgba(18,18,17,.97),rgba(18,18,17,.78) 68%,rgba(18,18,17,.54)),url('public/Hair plaiting 1.jpg'); background-position:55% center; } .booking-hero h1 { font-size:clamp(2.65rem,13vw,4.3rem); } .booking-trust { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .booking-trust span { align-items:flex-start; font-size:.78rem; } .booking-progress { display:flex; overflow-x:auto; gap:7px; padding:2px 1px 9px; scrollbar-width:thin; } .booking-progress-step { flex:0 0 auto; min-width:49px; justify-content:center; padding:9px; } .booking-step-name { display:none; } .booking-step-number { width:28px; height:28px; flex-basis:28px; } .booking-panel { padding:18px 14px; border-radius:19px; } .booking-service-card { grid-template-columns:82px minmax(0,1fr); gap:11px; } .booking-service-card img { width:82px; height:105px; } .booking-service-info h3 { font-size:.91rem; } .booking-service-info p { font-size:.76rem; } .booking-service-meta { gap:7px; font-size:.72rem; } .booking-choice-grid { grid-template-columns:1fr; } .booking-date-option { min-width:68px; } .booking-time-options { grid-template-columns:repeat(2,minmax(0,1fr)); } .booking-details-grid { grid-template-columns:1fr; } .booking-field-full { grid-column:auto; } .booking-step-actions { position:sticky; bottom:7px; z-index:2; margin-inline:-4px; padding:12px 4px 4px; background:linear-gradient(rgba(23,23,23,0),var(--book-ink) 30%); } .booking-step-actions .booking-btn { flex:1; min-width:0; padding-inline:12px; } }
+  @media(max-width:600px) { .booking-wrap { width:min(100% - 26px,1180px); } .booking-hero { padding:52px 0 32px; } .booking-hero::before { background-image:linear-gradient(0deg,rgba(18,18,17,.97),rgba(18,18,17,.78) 68%,rgba(18,18,17,.54)),url('/Hair plaiting 1.jpg'); background-position:55% center; } .booking-hero h1 { font-size:clamp(2.65rem,13vw,4.3rem); } .booking-trust { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; } .booking-trust span { align-items:flex-start; font-size:.78rem; } .booking-progress { display:flex; overflow-x:auto; gap:7px; padding:2px 1px 9px; scrollbar-width:thin; } .booking-progress-step { flex:0 0 auto; min-width:49px; justify-content:center; padding:9px; } .booking-step-name { display:none; } .booking-step-number { width:28px; height:28px; flex-basis:28px; } .booking-panel { padding:18px 14px; border-radius:19px; } .booking-service-card { grid-template-columns:82px minmax(0,1fr); gap:11px; } .booking-service-card img { width:82px; height:105px; } .booking-service-info h3 { font-size:.91rem; } .booking-service-info p { font-size:.76rem; } .booking-service-meta { gap:7px; font-size:.72rem; } .booking-choice-grid { grid-template-columns:1fr; } .booking-date-option { min-width:68px; } .booking-time-options { grid-template-columns:repeat(2,minmax(0,1fr)); } .booking-details-grid { grid-template-columns:1fr; } .booking-field-full { grid-column:auto; } .booking-step-actions { position:sticky; bottom:7px; z-index:2; margin-inline:-4px; padding:12px 4px 4px; background:linear-gradient(rgba(23,23,23,0),var(--book-ink) 30%); } .booking-step-actions .booking-btn { flex:1; min-width:0; padding-inline:12px; } }
   @media(prefers-reduced-motion:reduce) { .booking-page *, .booking-page *::before, .booking-page *::after { animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important; scroll-behavior:auto!important; } }
 `
 
