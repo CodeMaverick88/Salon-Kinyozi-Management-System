@@ -7,7 +7,7 @@ import {
 } from 'lucide-react'
 
 /* ------------------------------------------------------------------ */
-/*  IMAGES: every photo lives in /public/clients/. Replace the files    */
+/*  IMAGES: every photo lives in //clients/. Replace the files    */
 /*  below with your own using the same names, or change a path here.    */
 /* ------------------------------------------------------------------ */
 const IMAGES = {
@@ -63,18 +63,18 @@ const TRUST = [
 
 /* price: null shows "KSh —" until the owner sets it from the admin portal */
 const SERVICES = [
-  { id: 'braids', category: 'hair-salon', name: 'Braids', text: 'Neat, long-lasting braids in the style you choose.', duration: '3 – 5 hours', price: null, image: '/Braids.jpg' },
-  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', text: 'Styling for everyday looks and special occasions.', duration: '1 hour', price: null, image: '/Hair Styling.jpg' },
-  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', text: 'A smooth, polished finish after your wash.', duration: '45 minutes', price: null, image: '/Blow Drying.jpg' },
-  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", text: 'A clean cut shaped around your face and style.', duration: '30 minutes', price: null, image: '/Men Shave.jpg' },
-  { id: 'fade', category: 'kinyozi', name: 'Fade', text: 'Sharp, precise fades blended from skin to length.', duration: '40 minutes', price: null, image: '/Fade Haircut.jpg' },
-  { id: 'shave', category: 'kinyozi', name: 'Shave', text: 'A close, comfortable shave with a fresh finish.', duration: '25 minutes', price: null, image: '/Men Haircut.jpg' },
-  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', text: 'Shaped and lined beards that stay tidy.', duration: '20 minutes', price: null, image: '/Beard Trim.jpg' },
-  { id: 'makeup', category: 'beauty', name: 'Makeup', text: 'Makeup for events, photos and everyday confidence.', duration: '1 hour', price: null, image: '/Makeup.jpg' },
-  { id: 'nails', category: 'beauty', name: 'Nails', text: 'Nail shaping, colour and finishing.', duration: '1 hour', price: null, image: '/Nails.jpg' },
-  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', text: 'Hand and foot care that leaves you refreshed.', duration: '1 hour 30 minutes', price: null, image: '/Nails Manicure.jpg' },
+  { id: 'braids', category: 'hair-salon', name: 'Braids', text: 'Neat, long-lasting braids in the style you choose.', duration: '3 – 5 hours', pricePrefix: 'From', price: 2100, image: '/Braids.jpg' },
+  { id: 'hair-styling', category: 'hair-salon', name: 'Hair Styling', text: 'Styling for everyday looks and special occasions.', duration: '1 hour', pricePrefix: 'From', price: 500, image: '/Hair Styling.jpg' },
+  { id: 'blow-dry', category: 'hair-salon', name: 'Blow-Dry', text: 'A smooth, polished finish after your wash.', duration: '45 minutes', pricePrefix: 'From', price: 1000, image: '/Blow Drying.jpg' },
+  { id: 'mens-haircut', category: 'kinyozi', name: "Men's Haircut", text: 'A clean cut shaped around your face and style.', duration: '30 minutes', price: 1000, image: '/Men Shave.jpg' },
+  { id: 'fade', category: 'kinyozi', name: 'Fade', text: 'Sharp, precise fades blended from skin to length.', duration: '40 minutes', pricePrefix: 'From', price: 1000, image: '/Fade Haircut.jpg' },
+  { id: 'shave', category: 'kinyozi', name: 'Shave', text: 'A close, comfortable shave with a fresh finish.', duration: '25 minutes', price: 500, image: '/Men Haircut.jpg' },
+  { id: 'beard-trim', category: 'kinyozi', name: 'Beard Trim', text: 'Shaped and lined beards that stay tidy.', duration: '20 minutes', price: 700, image: '/Beard Trim.jpg' },
+  { id: 'makeup', category: 'beauty', name: 'Makeup', text: 'Makeup for events, photos and everyday confidence.', duration: '1 hour', pricePrefix: 'From', price: 1000, image: '/Makeup.jpg' },
+  { id: 'nails', category: 'beauty', name: 'Nails', text: 'Nail shaping, colour and finishing.', duration: '1 hour', price: 500, image: '/Nails.jpg' },
+  { id: 'manicure', category: 'beauty', name: 'Manicure & Pedicure', text: 'Hand and foot care that leaves you refreshed.', duration: '1 hour 30 minutes', pricePrefix: 'From', price: 899, image: '/Nails Manicure.jpg' },
   { id: 'hair-wash', category: 'hair-care', name: 'Wash & Condition', text: 'A gentle wash with conditioning for soft hair.', duration: '30 minutes', price: null, image: '/Hair Wash.jpg' },
-  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', text: 'Treatments that restore strength and shine.', duration: '45 minutes', price: null, image: '/Hair Treatment.jpg' },
+  { id: 'hair-treatment', category: 'hair-care', name: 'Hair Treatment', text: 'Treatments that restore strength and shine.', duration: '45 minutes', pricePrefix: 'From', price: 1500, image: '/Hair Treatment.jpg' },
 ]
 
 const WHY = [
@@ -118,15 +118,15 @@ const STYLES = `
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600;700&display=swap');
 
 .c5-home {
-  --gold: #f8c957;
-  --gold-deep: #d9a82f;
-  --ink: #0d1216;
-  --ink-2: #131a20;
-  --ink-3: #1b242c;
-  --text: #eef1f3;
-  --muted: #a9b4bd;
-  --line: rgba(255, 255, 255, 0.1);
-  --glass: rgba(255, 255, 255, 0.06);
+  --gold: #b7791f;
+  --gold-deep: #9a5f12;
+  --ink: #f7f6f2;
+  --ink-2: #ffffff;
+  --ink-3: #ffffff;
+  --text: #20252a;
+  --muted: #626b73;
+  --line: rgba(32, 37, 42, 0.12);
+  --glass: rgba(255, 255, 255, 0.92);
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
   font-family: 'Outfit', system-ui, sans-serif;
   background: var(--ink);
@@ -143,7 +143,7 @@ const STYLES = `
 .c5-home :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 
 .c5-wrap { width: min(1180px, 100% - 2rem); margin-inline: auto; }
-.c5-section { padding: clamp(3.5rem, 9vw, 7rem) 0; position: relative; }
+.c5-section { padding: clamp(2.5rem, 5vw, 4.5rem) 0; position: relative; }
 .c5-alt { background: linear-gradient(180deg, var(--ink-2), var(--ink)); }
 .c5-center { display: flex; justify-content: center; margin-top: 2rem; }
 .c5-cell { height: 100%; }
@@ -220,8 +220,8 @@ const STYLES = `
 .c5-link:hover { gap: 0.7rem; }
 
 /* ---------- hero ---------- */
-.c5-hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: clamp(6.5rem, 14vw, 8.5rem) 0 6rem; overflow: hidden; }
-.c5-hero-slides { position: absolute; inset: -110px 0 0 0; transform: translateY(calc(var(--hp, 0) * 90px)); will-change: transform; background: radial-gradient(circle at 30% 20%, #26323b, var(--ink) 70%); }
+.c5-hero { position: relative; min-height: min(82svh, 760px); display: flex; align-items: center; padding: clamp(5.5rem, 10vw, 7rem) 0 4.5rem; overflow: hidden; }
+.c5-hero-slides { position: absolute; inset: -110px 0 0 0; background: radial-gradient(circle at 30% 20%, #26323b, var(--ink) 70%); }
 .c5-slide { position: absolute; inset: 0; opacity: 0; transition: opacity 1.6s ease; }
 .c5-slide.is-active { opacity: 1; }
 .c5-slide-img, .c5-slide .c5-fallback { width: 100%; height: 100%; object-fit: cover; transform: scale(1); }
@@ -233,7 +233,7 @@ const STYLES = `
 .c5-orb-b { width: 260px; height: 260px; bottom: 6%; left: -4%; background: rgba(248, 201, 87, 0.14); animation: c5-drift 15s ease-in-out infinite reverse; }
 @keyframes c5-drift { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-30px, 34px); } }
 
-.c5-hero-grid { position: relative; z-index: 2; opacity: calc(1 - var(--hp, 0) * 1.25); transform: translateY(calc(var(--hp, 0) * -46px)); display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.c5-hero-grid { position: relative; z-index: 2; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
 .c5-pill { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 1rem; border-radius: 999px; font-size: 0.92rem; font-weight: 500; color: var(--gold); background: rgba(248, 201, 87, 0.1); border: 1px solid rgba(248, 201, 87, 0.35); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
 .c5-hero h1 { margin-top: 1.1rem; font-size: clamp(2.6rem, 9vw, 5.6rem); font-weight: 700; animation: c5-title-glow 5s ease-in-out infinite; }
 @keyframes c5-title-glow { 0%, 100% { text-shadow: 0 0 24px rgba(248, 201, 87, 0.15); } 50% { text-shadow: 0 0 50px rgba(248, 201, 87, 0.5); } }
@@ -467,6 +467,48 @@ const STYLES = `
 .c5-direct p { color: var(--muted); }
 .c5-lb-hint { position: absolute; bottom: 1rem; left: 50%; translate: -50% 0; font-size: 0.8rem; color: var(--muted); }
 
+/* ---------- simplified light theme, hierarchy, and responsive refinements ---------- */
+.c5-home { background: var(--ink); color: var(--text); }
+.c5-alt { background: #efeee9; }
+.c5-hero-slides { background: #ece9e1; }
+.c5-hero-shade { background: linear-gradient(90deg, rgba(8,12,15,.52) 0%, rgba(8,12,15,.28) 38%, rgba(8,12,15,.06) 68%, transparent 100%); }
+.c5-hero h1 { color: #fff; text-shadow: 0 2px 14px rgba(0,0,0,.28); }
+.c5-hero .c5-tagline { color: #ffe2a0; }
+.c5-hero .c5-lead { color: #f4f1eb; text-shadow: 0 1px 8px rgba(0,0,0,.32); }
+.c5-card { background: #fff; box-shadow: 0 3px 14px rgba(32,37,42,.06); }
+.c5-glass { background: rgba(255,255,255,.88); border-color: rgba(32,37,42,.12); box-shadow: 0 3px 14px rgba(32,37,42,.06); }
+.c5-btn-gold { color: #fff !important; background: #9a5f12; box-shadow: none; }
+.c5-btn-gold:hover { background: #7f4d0e; box-shadow: 0 5px 14px rgba(32,37,42,.12); }
+.c5-btn-glass { color: #20252a; background: #fff; border-color: rgba(32,37,42,.2); }
+.c5-pill { color: #774b0f; background: rgba(255,255,255,.82); border-color: rgba(183,121,31,.3); }
+.c5-hero-controls { display: none !important; }
+.c5-orb, .c5-spark, .c5-about-glow, .c5-cta-glow { display: none !important; }
+.c5-hero h1 { animation: none; text-shadow: none; }
+.c5-hero-card { animation: none; }
+.c5-lift:hover, .c5-lift:focus-within { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.c5-lift:hover::before { opacity: 0; }
+.c5-icon, .c5-fab-wa, .c5-breathe-btn { animation: none; }
+.c5-btn::after, .c5-cta::after { display: none; }
+.c5-shot:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.12); }
+.c5-fallback { animation: none; }
+@media (max-width: 820px) {
+  .c5-section { padding-block: 2.75rem; }
+  .c5-hero { min-height: 70svh; padding-top: 6rem; }
+  .c5-hero-grid { grid-template-columns: 1fr; }
+  .c5-hero-copy { max-width: 680px; }
+  .c5-hero-shade { background: linear-gradient(180deg, rgba(8,12,15,.12), rgba(8,12,15,.24) 58%, rgba(8,12,15,.48)); }
+  .c5-services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .c5-find { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .c5-hero { min-height: 68svh; padding: 5.5rem 0 3rem; }
+  .c5-hero h1 { font-size: clamp(2.35rem, 12vw, 3.4rem); }
+  .c5-services { grid-template-columns: 1fr; }
+  .c5-trust-grid { grid-template-columns: 1fr; }
+  .c5-about { grid-template-columns: 1fr; }
+  .c5-card-body { padding: 1rem; }
+}
+
 /* ---------- large screens ---------- */
 @media (min-width: 1200px) {
   .c5-wrap { width: min(1280px, 100% - 6rem); }
@@ -482,10 +524,77 @@ const STYLES = `
   .c5-hero h1 { font-size: 7.4rem; }
   .c5-lead { font-size: 1.3rem; max-width: 620px; }
 }
+
+/* Art direction for the full-colour automatic hero slideshow. */
+.c5-hero {
+  min-height:clamp(560px,78svh,800px);
+  padding:clamp(2.5rem,5.5vh,4rem) 0 3rem;
+  isolation:isolate;
+}
+.c5-hero-slides { inset:0; width:100%; height:100%; overflow:hidden; background:#e9e8e2; }
+.c5-slide { inset:0; overflow:hidden; }
+.c5-slide-img, .c5-slide .c5-fallback {
+  display:block; width:100%; height:100%; object-fit:cover; object-position:50% 45%;
+}
+.c5-slide.is-active .c5-slide-img { animation:c5-responsive-slide-zoom 6500ms ease-out both; }
+@keyframes c5-responsive-slide-zoom { from { transform:scale(1.01); } to { transform:scale(1.055); } }
+.c5-hero-shade {
+  background:linear-gradient(90deg,rgba(8,12,15,.48) 0%,rgba(8,12,15,.27) 40%,rgba(8,12,15,.08) 72%,rgba(8,12,15,.02) 100%);
+}
+.c5-hero-grid { width:min(1180px,calc(100% - 2rem)); grid-template-columns:minmax(0,1fr); }
+.c5-hero-copy { width:100%; max-width:650px; }
+.c5-hero .c5-lead { max-width:540px; }
+@media(max-width:1024px) {
+  .c5-hero { min-height:clamp(540px,78svh,760px); padding:clamp(2rem,4.5vh,3.5rem) 0 2.5rem; }
+  .c5-hero-shade { background:linear-gradient(90deg,rgba(8,12,15,.44) 0%,rgba(8,12,15,.23) 55%,rgba(8,12,15,.06) 100%); }
+}
+@media(max-width:820px) {
+  .c5-hero { min-height:clamp(560px,82svh,760px); align-items:center; padding:2.2rem 0 2rem; }
+  .c5-hero-grid { width:min(100% - 1.5rem,680px); }
+  .c5-hero-copy { max-width:620px; }
+  .c5-slide-img, .c5-slide .c5-fallback { object-position:50% 40%; }
+  .c5-hero-shade {
+    background:linear-gradient(90deg,rgba(8,12,15,.46) 0%,rgba(8,12,15,.28) 58%,rgba(8,12,15,.08) 100%),
+      linear-gradient(0deg,rgba(8,12,15,.24) 0%,transparent 58%);
+  }
+  .c5-hero h1 { max-width:13ch; font-size:clamp(2.7rem,8vw,4.6rem); }
+  .c5-hero .c5-tagline { font-size:clamp(1.05rem,3vw,1.35rem); }
+  .c5-hero .c5-lead { font-size:clamp(.94rem,2.4vw,1.05rem); }
+}
+@media(max-width:560px) {
+  .c5-hero { min-height:clamp(560px,82svh,740px); padding:1.8rem 0 1.6rem; }
+  .c5-hero-grid { width:calc(100% - 1.25rem); }
+  .c5-hero-copy { max-width:100%; }
+  .c5-slide-img, .c5-slide .c5-fallback { object-position:50% 36%; }
+  .c5-hero-shade {
+    background:linear-gradient(90deg,rgba(8,12,15,.48) 0%,rgba(8,12,15,.3) 68%,rgba(8,12,15,.1) 100%),
+      linear-gradient(0deg,rgba(8,12,15,.24) 0%,transparent 52%);
+  }
+  .c5-hero h1 { max-width:11ch; font-size:clamp(2.35rem,10.8vw,3.3rem); line-height:1.06; }
+  .c5-hero .c5-pill { max-width:100%; font-size:.82rem; }
+  .c5-hero .c5-tagline { margin-top:.72rem; font-size:1.04rem; }
+  .c5-hero .c5-lead { max-width:34rem; margin-top:.7rem; font-size:.94rem; line-height:1.5; }
+  .c5-hero .c5-actions { display:grid; grid-template-columns:minmax(0,1fr); width:min(100%,340px); gap:.58rem; margin-top:1.15rem; }
+  .c5-hero .c5-actions .c5-btn { width:100%; min-height:46px; padding:.72rem .9rem; font-size:.9rem; }
+}
+@media(max-width:380px) {
+  .c5-hero { min-height:560px; }
+  .c5-hero h1 { font-size:2.28rem; }
+  .c5-hero-grid { width:calc(100% - 1rem); }
+  .c5-hero .c5-lead { font-size:.9rem; }
+}
+@media(orientation:landscape) and (max-height:520px) and (max-width:900px) {
+  .c5-hero { min-height:520px; }
+  .c5-hero-grid { max-width:720px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .c5-slide.is-active .c5-slide-img { animation:none; transform:none; }
+}
+
 `
 
 /* ------------------------------- helpers ------------------------------ */
-const formatPrice = (n) => (n == null ? 'KSh —' : `KSh ${Number(n).toLocaleString('en-KE')}`)
+const formatPrice = (n, prefix = '') => (n == null ? 'Price on request' : `${prefix ? `${prefix} ` : ''}KSh ${Number(n).toLocaleString('en-KE')}`)
 const isLive = (p, now = new Date()) => now >= new Date(p.startsAt) && now <= new Date(`${p.endsAt}T23:59:59`)
 
 const scrollToId = (id) => (e) => {
@@ -572,28 +681,17 @@ function SectionHead({ title, text }) {
   )
 }
 
-const SPARKS = [
-  { l: '8%', t: '62%', d: '0s', s: 0.9 }, { l: '18%', t: '78%', d: '2.4s', s: 0.7 },
-  { l: '31%', t: '55%', d: '4.8s', s: 1 }, { l: '47%', t: '82%', d: '1.2s', s: 0.8 },
-  { l: '58%', t: '66%', d: '3.6s', s: 0.7 }, { l: '71%', t: '80%', d: '6s', s: 1 },
-  { l: '83%', t: '58%', d: '2s', s: 0.8 }, { l: '92%', t: '74%', d: '5.2s', s: 0.9 },
-]
-
 /* ------------------------------- hero -------------------------------- */
 function Hero() {
   const [index, setIndex] = useState(0)
-  const [paused, setPaused] = useState(false)
-  const touchX = useRef(null)
   const root = useRef(null)
   const count = HERO_SLIDES.length
 
-  const go = useCallback((i) => setIndex((i + count) % count), [count])
 
   useEffect(() => {
-    if (paused) return undefined
     const t = setInterval(() => setIndex((i) => (i + 1) % count), 6500)
     return () => clearInterval(t)
-  }, [paused, count, index])
+  }, [count])
 
   /* parallax and fade as you scroll away from the hero */
   useEffect(() => {
@@ -617,25 +715,11 @@ function Hero() {
     }
   }, [])
 
-  const onTouchStart = (e) => { touchX.current = e.touches[0].clientX; setPaused(true) }
-  const onTouchEnd = (e) => {
-    if (touchX.current != null) {
-      const dx = e.changedTouches[0].clientX - touchX.current
-      if (Math.abs(dx) > 45) go(index + (dx < 0 ? 1 : -1))
-    }
-    touchX.current = null
-    setPaused(false)
-  }
-
   return (
     <section
       id="home"
       ref={root}
       className="c5-hero"
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
-      onTouchStart={onTouchStart}
-      onTouchEnd={onTouchEnd}
     >
       <div className="c5-hero-slides" aria-hidden="true">
         {HERO_SLIDES.map((s, i) => (
@@ -646,11 +730,6 @@ function Hero() {
         <div className="c5-hero-shade" />
       </div>
 
-      <span className="c5-orb c5-orb-a" aria-hidden="true" />
-      <span className="c5-orb c5-orb-b" aria-hidden="true" />
-      {SPARKS.map((s) => (
-        <i key={s.l} className="c5-spark" aria-hidden="true" style={{ left: s.l, top: s.t, animationDelay: s.d, scale: s.s }} />
-      ))}
 
       <div className="c5-wrap c5-hero-grid">
         <div className="c5-hero-copy">
@@ -671,43 +750,7 @@ function Hero() {
             <a href="#services" onClick={scrollToId('services')} className="c5-btn c5-btn-glass">Explore Our Services</a>
           </div>
         </div>
-
-        <aside className="c5-glass c5-hero-card c5-rise" style={{ '--d': '1100ms' }}>
-          <h2>What are you booking today?</h2>
-          <div className="c5-quick">
-            {CATEGORIES.map(({ id, name, icon }) => (
-              <Link key={id} to={`/book-now?category=${id}`} className="c5-quick-item">
-                {createElement(icon, { size: 20 })}
-                <span>{name}</span>
-              </Link>
-            ))}
-          </div>
-          <div className="c5-now-showing" aria-live="polite">
-            <strong>{HERO_SLIDES[index].label}</strong>
-            <span>{HERO_SLIDES[index].note}</span>
-          </div>
-        </aside>
       </div>
-
-      <div className="c5-hero-controls">
-        <button type="button" className="c5-round" onClick={() => go(index - 1)} aria-label="Previous slide"><ChevronLeft size={20} /></button>
-        <div className="c5-dots" role="tablist" aria-label="Hero slides">
-          {HERO_SLIDES.map((s, i) => (
-            <button
-              key={s.label}
-              type="button"
-              role="tab"
-              aria-selected={i === index}
-              aria-label={`Show ${s.label}`}
-              className={`c5-dot ${i === index ? 'is-active' : ''}`}
-              onClick={() => go(i)}
-            />
-          ))}
-        </div>
-        <button type="button" className="c5-round" onClick={() => go(index + 1)} aria-label="Next slide"><ChevronRight size={20} /></button>
-      </div>
-
-      <a href="#trust" onClick={scrollToId('trust')} className="c5-scroll" aria-label="Scroll down"><ChevronDown size={22} /></a>
     </section>
   )
 }
@@ -777,7 +820,7 @@ function Ticker() {
 
 function Services() {
   const [active, setActive] = useState('all')
-  const list = useMemo(() => (active === 'all' ? SERVICES : SERVICES.filter((s) => s.category === active)), [active])
+  const list = useMemo(() => (active === 'all' ? SERVICES.slice(0, 4) : SERVICES.filter((s) => s.category === active)), [active])
   return (
     <section id="services" className="c5-section c5-alt">
       <Reveal variant="sec" className="c5-wrap">
@@ -800,13 +843,18 @@ function Services() {
                 <h3>{s.name}</h3>
                 <p>{s.text}</p>
                 <div className="c5-card-foot">
-                  <span className="c5-price">{formatPrice(s.price)}</span>
+                  <span className="c5-price">{formatPrice(s.price, s.pricePrefix)}</span>
                   <Link to={`/book-now?service=${s.id}`} className="c5-btn c5-btn-gold c5-btn-sm">Book This Service</Link>
                 </div>
               </div>
             </article>
           ))}
         </div>
+        {active === 'all' && (
+          <div className="c5-center">
+            <Link to="/book-now" className="c5-btn c5-btn-glass">Browse all services <ArrowRight size={17} /></Link>
+          </div>
+        )}
       </Reveal>
     </section>
   )
@@ -1171,15 +1219,11 @@ function Home() {
       <Hero />
       <Trust />
       <About />
-      <Ticker />
       <Services />
-      <Why />
       <Gallery />
       <Promotions />
       <Team />
-      <Reviews />
       <FindUs />
-      <FinalCta />
       <Floaters />
     </div>
   )

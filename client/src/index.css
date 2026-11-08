@@ -1,26 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
 
 :root {
   font-family: 'DM Sans', sans-serif;
 
-  color: #242424;
-  background: #FAF8F3;
+  color: #333333;
+  background: #F7F7F5;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --color-dark: #171717;
-  --color-light: #FAF8F3;
+  /* Neutral, reusable palette */
+  --color-dark: #2F3B46;
+  --color-dark-soft: #46525C;
+  --color-light: #F7F7F5;
   --color-white: #FFFFFF;
-  --color-green: #176B55;
-  --color-green-dark: #10513F;
-  --color-gold: #D6A84F;
-  --color-text: #242424;
-  --color-muted: #707070;
-  --color-border: #E8E3D9;
+
+  --color-primary: #2E7D6B;
+  --color-primary-dark: #236355;
+  --color-primary-soft: #EAF4F1;
+
+  --color-accent: #C99A45;
+  --color-accent-soft: #F6EEDD;
+
+  --color-text: #333333;
+  --color-text-soft: #5F6B73;
+  --color-muted: #6B757D;
+
+  --color-border: #DFE3E6;
+  --color-border-soft: #EAEDEF;
 
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'DM Sans', sans-serif;
@@ -28,9 +37,12 @@
   --container-width: 1200px;
   --navbar-height: 76px;
 
+  --shadow-soft: 0 8px 24px rgba(31, 41, 51, 0.08);
+  --radius-small: 8px;
+  --radius-medium: 12px;
+
   font-weight: 400;
   line-height: 1.6;
-
   font-size: 16px;
 }
 
@@ -94,7 +106,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 h1,
@@ -108,13 +120,13 @@ p {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-gold);
+  outline: 3px solid rgba(46, 125, 107, 0.45);
   outline-offset: 3px;
 }
 
 ::selection {
-  color: var(--color-white);
-  background: var(--color-green);
+  color: #FFFFFF;
+  background: var(--color-primary);
 }
 
 #root {
